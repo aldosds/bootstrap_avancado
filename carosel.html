@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Bootstrap - Carousel</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Colocando a classe "carousel-fade" a imagem fica aparecendo em vez de ficar passando de lado -->
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="4000" class="carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/08/17/10/04/traffic-3612474_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Avenida</h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/27/19/22/city-1283801_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Rua</h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/21/14/50/autumn-1758194_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Estrada</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
